@@ -26,7 +26,7 @@ export default function SponsorsPage() {
             Unlock Access & Impact
           </Heading>
           <p className="text-lg text-emerald-900/80 leading-relaxed">
-            Sponsoring SEE-WIDP offers more than just logo placement. It is an
+            Sponsoring SEEI EXPO offers more than just logo placement. It is an
             opportunity to directly engage with policymakers, industry leaders,
             and a consumer base of millions in the South East region.
           </p>

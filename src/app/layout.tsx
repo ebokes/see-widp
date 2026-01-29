@@ -16,7 +16,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "SEE-WIDP | South East Event & Wedding Industry Development Project",
+  title: "SEEI EXPO | South East Event & Wedding Industry Development Project",
   description:
     "The official industry platform for the South East event & wedding ecosystem.",
 };

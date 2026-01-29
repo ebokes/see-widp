@@ -12,7 +12,7 @@ export default function NewsPage() {
             News & Media
           </Heading>
           <p className="text-xl text-emerald-100 max-w-3xl mx-auto">
-            Latest updates, press releases, and gallery from SEE-WIDP.
+            Latest updates, press releases, and gallery from SEEI EXPO.
           </p>
         </div>
       </section>
@@ -35,7 +35,7 @@ export default function NewsPage() {
                   Press Release
                 </span>
                 <h3 className="text-lg font-bold text-emerald-950 mb-3 hover:text-emerald-800 cursor-pointer">
-                  SEE-WIDP Launches Pilot in Enugu State
+                  SEEI EXPO Launches Pilot in Enugu State
                 </h3>
                 <p className="text-sm text-emerald-900/60 mb-4">
                   The highly anticipated development project was officially

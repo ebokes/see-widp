@@ -13,7 +13,7 @@ export default function ContactPage() {
             Get in Touch
           </Heading>
           <p className="text-xl text-emerald-100 max-w-3xl mx-auto">
-            Have questions about SEE-WIDP? We'd love to hear from you.
+            Have questions about SEEI EXPO? We'd love to hear from you.
           </p>
         </div>
       </section>
@@ -47,7 +47,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h4 className="font-bold text-emerald-950">Email</h4>
-                  <p className="text-emerald-800/70">contact@see-widp.com</p>
+                  <p className="text-emerald-800/70">contact@seeiexpo.com</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">

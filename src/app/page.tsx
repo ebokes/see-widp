@@ -17,7 +17,7 @@ export default function Home() {
         </div>
 
         <div className="container relative z-10 px-4 sm:px-6 lg:px-8 text-center max-w-5xl mx-auto pt-6 md:pt-20 pb-20">
-          <div className="inline-block px-3 py-1 mb-6 rounded-full bg-white/10 border border-white/20 backdrop-blur-sm text-gold-400 text-sm font-medium tracking-wide animate-fade-in-up">
+          <div className="inline-block px-3 py-1 mb-6 rounded-full bg-white/10 border border-white/20 backdrop-blur-sm text-gold-400 text-sm font-bold tracking-wide animate-fade-in-up">
             SOUTH EAST EVENT INDUSTRY EXPO
           </div>
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold font-heading text-white leading-tight mb-6 animate-fade-in-up delay-100">
@@ -90,7 +90,7 @@ export default function Home() {
               Transforming the Industry Standard
             </Heading>
             <p className="text-lg text-emerald-900/80 mb-6 leading-relaxed">
-              SEE-WIDP is not just an event; it's a movement. We are bridging
+              SEEI EXPO is not just an event; it's a movement. We are bridging
               the gap between talent and opportunity, creating a structured
               ecosystem where businesses thrive.
             </p>

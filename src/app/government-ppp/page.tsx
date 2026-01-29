@@ -24,10 +24,12 @@ export default function GovernmentPPPPage() {
             The Partnership Model
           </Heading>
           <p className="text-lg text-emerald-900/80 mb-8 leading-relaxed">
-            SEE-WIDP operates on a robust Public-Private Partnership (PPP)
+            SEEI EXPO operates on a robust Public-Private Partnership (PPP)
             framework designed to leverage the strengths of both sectors. While
-            the <span className="font-bold">Enugu State Government</span> provides the enabling environment,
-            endorsement, and institutional support, <span className="font-bold">SEE-WIDP Projects Ltd</span> drives the execution, funding, and operational excellence of the
+            the <span className="font-bold">Enugu State Government</span>{" "}
+            provides the enabling environment, endorsement, and institutional
+            support, <span className="font-bold">SEEI EXPO Projects Ltd</span>{" "}
+            drives the execution, funding, and operational excellence of the
             platform.
           </p>
 
@@ -99,8 +101,8 @@ export default function GovernmentPPPPage() {
               </h4>
               <p className="text-emerald-900/70">
                 We adhere to strict governance protocols to maintain the trust
-                of our partners, sponsors, and the public. Every aspect of
-                SEE-WIDP is designed to deliver measurable economic impact.
+                of our partners, sponsors, and the public. Every aspect of SEEI
+                EXPO is designed to deliver measurable economic impact.
               </p>
             </div>
           </Card>

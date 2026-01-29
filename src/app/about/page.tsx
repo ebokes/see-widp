@@ -9,7 +9,7 @@ export default function AboutPage() {
       <section className="bg-emerald-950 text-white pt-32 pb-20">
         <div className="container mx-auto px-4 text-center">
           <Heading level="h1" intent="title" className="text-white mb-6">
-            About SEE-WIDP
+            About SEEI EXPO
           </Heading>
           <p className="text-xl text-emerald-100 max-w-3xl mx-auto">
             A strategic initiative to formalize, grow, and project the South
@@ -27,7 +27,7 @@ export default function AboutPage() {
             <p className="text-lg text-emerald-900/80 leading-relaxed mb-6">
               The event and wedding industry in South East Nigeria is a
               multi-billion Naira creative economy that has largely remained
-              fragmented and informal. SEE-WIDP was born out of the need to
+              fragmented and informal. SEEI EXPO was born out of the need to
               structure this ecosystem, providing a unified platform for
               professionals to collaborate, learn, and scale.
             </p>

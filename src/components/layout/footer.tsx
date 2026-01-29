@@ -123,7 +123,7 @@ export function Footer() {
             </h4>
             <ul className="space-y-3 text-sm text-emerald-100">
               <li>Enugu, Nigeria</li>
-              <li>contact@see-widp.com</li>
+              <li>contact@seeiexpo.com</li>
               <li>+234 000 000 000</li>
             </ul>
             <div className="mt-6">
@@ -138,8 +138,8 @@ export function Footer() {
 
         <div className="border-t border-emerald-900 mt-12 pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-emerald-400">
           <p>
-            &copy; {new Date().getFullYear()} NIGERIA EVENT INDUSTRY EXPO
-            Projects Ltd. All rights reserved.
+            &copy; {new Date().getFullYear()} South East Event Industry Expo.
+            All rights reserved.
           </p>
           <div className="flex gap-4 mt-4 md:mt-0">
             <Link href="#" className="hover:text-white">
