@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "../ui/button";
@@ -18,6 +19,7 @@ const NAV_LINKS = [
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -65,6 +67,7 @@ export function Navbar() {
                   className={cn(
                     "text-sm font-medium transition-colors hover:text-gold-500",
                     isScrolled ? "text-emerald-950" : "text-white/90",
+                    pathname === link.href && "text-gold-500 font-bold",
                   )}
                 >
                   {link.label}
@@ -72,7 +75,7 @@ export function Navbar() {
               ))}
             </div>
             <div className="flex gap-4">
-              <Link href="/exhibitors">
+              <Link href="/exhibitors" className="cursor-pointer">
                 <Button
                   variant={isScrolled ? "outline" : "gold"}
                   size="sm"
@@ -84,7 +87,7 @@ export function Navbar() {
                   Exhibitor Info
                 </Button>
               </Link>
-              <Link href="/contact">
+              <Link href="/contact" className="cursor-pointer">
                 <Button variant={isScrolled ? "gold" : "gold"} size="sm">
                   Partner With Us
                 </Button>
@@ -126,7 +129,12 @@ export function Navbar() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-lg font-medium text-emerald-950 hover:text-gold-600"
+              className={cn(
+                "text-lg font-medium hover:text-gold-600 transition-colors",
+                pathname === link.href
+                  ? "text-gold-600 font-bold"
+                  : "text-emerald-950",
+              )}
               onClick={() => setIsOpen(false)}
             >
               {link.label}

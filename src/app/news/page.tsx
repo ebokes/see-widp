@@ -6,7 +6,7 @@ import { Image as ImageIcon } from "lucide-react";
 export default function NewsPage() {
   return (
     <>
-      <section className="bg-emerald-950 text-white py-20">
+      <section className="bg-emerald-950 text-white pt-32 pb-20">
         <div className="container mx-auto px-4 text-center">
           <Heading level="h1" intent="title" className="text-white mb-6">
             News & Media

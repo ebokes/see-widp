@@ -16,7 +16,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1519167758481-83f550bb49b3?q=80&w=2698&auto=format&fit=crop')] bg-cover bg-center mix-blend-overlay opacity-20" />
         </div>
 
-        <div className="container relative z-10 px-4 sm:px-6 lg:px-8 text-center max-w-5xl mx-auto">
+        <div className="container relative z-10 px-4 sm:px-6 lg:px-8 text-center max-w-5xl mx-auto py-20">
           <div className="inline-block px-3 py-1 mb-6 rounded-full bg-white/10 border border-white/20 backdrop-blur-sm text-gold-400 text-sm font-medium tracking-wide animate-fade-in-up">
             SOUTH EAST EVENT & WEDDING INDUSTRY DEVELOPMENT PROJECT
           </div>

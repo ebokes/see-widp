@@ -6,7 +6,7 @@ import { Building2, Handshake, ShieldCheck } from "lucide-react";
 export default function GovernmentPPPPage() {
   return (
     <>
-      <section className="bg-emerald-950 text-white py-20">
+      <section className="bg-emerald-950 text-white pt-32 pb-20">
         <div className="container mx-auto px-4 text-center">
           <Heading level="h1" intent="title" className="text-white mb-6">
             Government & PPP
@@ -26,9 +26,8 @@ export default function GovernmentPPPPage() {
           <p className="text-lg text-emerald-900/80 mb-8 leading-relaxed">
             SEE-WIDP operates on a robust Public-Private Partnership (PPP)
             framework designed to leverage the strengths of both sectors. While
-            the **Enugu State Government** provides the enabling environment,
-            endorsement, and institutional support, **SEE-WIDP Projects Ltd**
-            drives the execution, funding, and operational excellence of the
+            the <span className="font-bold">Enugu State Government</span> provides the enabling environment,
+            endorsement, and institutional support, <span className="font-bold">SEE-WIDP Projects Ltd</span> drives the execution, funding, and operational excellence of the
             platform.
           </p>
 
