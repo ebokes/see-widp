@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "../ui/button";
@@ -19,7 +18,6 @@ const NAV_LINKS = [
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,9 +31,11 @@ export function Navbar() {
     <nav
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-        isScrolled || isOpen
-          ? "bg-white/95 backdrop-blur-md shadow-sm py-4"
-          : "bg-transparent py-6",
+        isOpen
+          ? "bg-white shadow-sm py-4"
+          : isScrolled
+            ? "bg-white/95 shadow-sm py-4"
+            : "bg-transparent py-4",
       )}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
@@ -47,13 +47,13 @@ export function Navbar() {
             </div>
             <span
               className={cn(
-                "font-heading font-bold text-xl tracking-tight",
-                isScrolled || isOpen
-                  ? "text-emerald-950"
-                  : "text-emerald-950 lg:text-white",
+                "font-heading font-bold text-xs sm:text-sm md:text-sm tracking-tight uppercase leading-tight max-w-[200px] sm:max-w-none text-left",
+                isScrolled || isOpen ? "text-emerald-950" : "text-white",
               )}
             >
-              SEE-WIDP
+              NIGERIA EVENT
+              <br />
+              INDUSTRY EXPO
             </span>
           </Link>
 
@@ -67,7 +67,6 @@ export function Navbar() {
                   className={cn(
                     "text-sm font-medium transition-colors hover:text-gold-500",
                     isScrolled ? "text-emerald-950" : "text-white/90",
-                    pathname === link.href && "text-gold-500 font-bold",
                   )}
                 >
                   {link.label}
@@ -75,7 +74,7 @@ export function Navbar() {
               ))}
             </div>
             <div className="flex gap-4">
-              <Link href="/exhibitors" className="cursor-pointer">
+              <Link href="/exhibitors">
                 <Button
                   variant={isScrolled ? "outline" : "gold"}
                   size="sm"
@@ -87,7 +86,7 @@ export function Navbar() {
                   Exhibitor Info
                 </Button>
               </Link>
-              <Link href="/contact" className="cursor-pointer">
+              <Link href="/contact">
                 <Button variant={isScrolled ? "gold" : "gold"} size="sm">
                   Partner With Us
                 </Button>
@@ -107,9 +106,7 @@ export function Navbar() {
               <Menu
                 className={cn(
                   "w-6 h-6",
-                  isScrolled
-                    ? "text-emerald-950"
-                    : "text-emerald-950 lg:text-white",
+                  isScrolled ? "text-emerald-950" : "text-white",
                 )}
               />
             )}
@@ -129,12 +126,7 @@ export function Navbar() {
             <Link
               key={link.href}
               href={link.href}
-              className={cn(
-                "text-lg font-medium hover:text-gold-600 transition-colors",
-                pathname === link.href
-                  ? "text-gold-600 font-bold"
-                  : "text-emerald-950",
-              )}
+              className="text-lg font-medium text-emerald-950 hover:text-gold-600"
               onClick={() => setIsOpen(false)}
             >
               {link.label}

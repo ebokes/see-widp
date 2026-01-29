@@ -86,7 +86,7 @@ export default function ConferencesPage() {
               key={i}
               className="flex flex-col md:flex-row gap-6 p-6 border border-neutral-200 rounded-lg hover:border-emerald-300 transition-colors"
             >
-              <div className="flex-shrink-0 flex flex-row md:flex-col items-center gap-2 text-emerald-600 min-w-[100px]">
+              <div className="shrink-0 mt-1 flex flex-row md:flex-col items-center gap-2 text-emerald-600 min-w-[100px]">
                 <Calendar className="w-5 h-5" />
                 <span className="font-bold">May 1{i}</span>
                 <span className="text-sm">10:00 AM</span>

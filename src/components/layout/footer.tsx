@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { SectionWrapper } from "../ui/section-wrapper";
 import { Button } from "../ui/button";
+import Image from "next/image";
 
 export function Footer() {
   return (
@@ -13,7 +14,12 @@ export function Footer() {
               <div className="w-8 h-8 bg-gold-500 rounded-sm flex items-center justify-center text-emerald-950 font-bold font-heading">
                 S
               </div>
-              <span className="font-heading font-bold text-xl">SEE-WIDP</span>
+              <span className="font-heading font-bold text-sm">
+                {" "}
+                NIGERIA EVENT
+                <br />
+                INDUSTRY EXPO
+              </span>
             </div>
             <p className="text-emerald-100/80 text-sm leading-relaxed">
               The official industry platform for the South East event & wedding
@@ -24,8 +30,14 @@ export function Footer() {
               <p className="text-xs uppercase tracking-wider text-gold-500/80 font-semibold mb-2">
                 In Collaboration With
               </p>
-              <div className="h-10 border border-white/20 rounded-md flex items-center justify-center text-white/40 text-xs">
-                [Enugu State Govt Logo]
+              <div className="mt-2 flex text-white/40 text-xs">
+                <Image
+                  src="/images/enugu-state-logo.webp"
+                  alt="Enugu State Government Logo"
+                  className="h-26 w-auto object-contain"
+                  width={700}
+                  height={700}
+                />
               </div>
             </div>
           </div>
@@ -126,8 +138,8 @@ export function Footer() {
 
         <div className="border-t border-emerald-900 mt-12 pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-emerald-400">
           <p>
-            &copy; {new Date().getFullYear()} SEE-WIDP Projects Ltd. All rights
-            reserved.
+            &copy; {new Date().getFullYear()} NIGERIA EVENT INDUSTRY EXPO
+            Projects Ltd. All rights reserved.
           </p>
           <div className="flex gap-4 mt-4 md:mt-0">
             <Link href="#" className="hover:text-white">

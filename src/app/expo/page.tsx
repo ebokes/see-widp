@@ -68,7 +68,7 @@ export default function ExpoPage() {
       <SectionWrapper background="light">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="h-[400px] bg-neutral-200 rounded-lg overflow-hidden relative">
-            <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1519225448526-72997f552b69?q=80&w=2670&auto=format&fit=crop')] bg-cover bg-center" />
+            <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=2670&auto=format&fit=crop')] bg-cover bg-center" />
           </div>
           <div>
             <div className="bg-gold-100 text-gold-800 font-bold px-3 py-1 rounded-full inline-block text-sm mb-4">
